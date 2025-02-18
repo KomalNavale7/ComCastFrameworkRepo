@@ -23,7 +23,14 @@ public class HomePage {
 
         @FindBy(linkText = "Sign Out")
        private WebElement signout;
+       
+        @FindBy(linkText = "Products")
+        private WebElement productLink;
         
+		public WebElement getProductLink() {
+			return productLink;
+		}
+
 		public WebElement getOrg() {
 			return Org;
 		}
